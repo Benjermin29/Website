@@ -13,14 +13,8 @@ app.get("/", function(req, res){
 	res.sendFile('index.html', {root: __dirname});  
 });
 
-app.get("/about", function(req, res){
-	res.send("About page")
-});
+app.use('/views', express.static('views'));
 
-app.get("/scripts/WeatherInfo.js", function(req, res){
-	res.sendFile('/scripts/WeatherInfo.js', {root: __dirname});  
-})
+app.use('/images', express.static('images'));
 
-app.get("/images/Weather_Report.png", function(req, res){
-	res.sendFile('/images/Weather_Report.png', {root: __dirname});  
-})
+app.use('/scripts', express.static('scripts'));

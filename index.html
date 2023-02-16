@@ -8,11 +8,17 @@
         <title>Ben Kath's Project 1</title>
     </head>
     <body>
-        <div>Hello, Welcome to Project 1!</div>
-		<p id="weatherInformation">This is a test</p>
-		<img src="/images/Weather_Report.png" width="275" height="375">
-		<script type="text/javascript" src="scripts/WeatherInfo.js"></script>
-		
+        <center>
+            <h1>Hello, Welcome to Project 1!</h1>
+            <p>Let's check the weather!</p>
+            <p id="weatherInformation">Enter a zipcode and press the button!</p>
+            <form id="zipCode">
+                Zipcode: <input type="text" name="zip" value="29486">
+            </form>
+            <button onclick="getWeather()">Get Weather</button><br/>
+            <img src="/images/Weather_Report.png" width="275" height="375">
+            <script type="text/javascript" src="scripts/WeatherInfo.js"></script>
+        </center>
 		
     </body>
 	
